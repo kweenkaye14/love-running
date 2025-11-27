@@ -161,6 +161,12 @@ main {
   justify-content: center;
 }
 
+#benefits-physical {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 #times {
   background: url('../images/dublin-city.webp') no-repeat center / cover;
   display: flex;
@@ -184,10 +190,13 @@ main {
   color: #fafafa;
 }
 
-#benefits-physical {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+#photos img {
+  width: 100%;
+  line-height: 1em;
+}
+
+#photos {
+  line-height: 0;
 }
 
 /* Footer */
@@ -204,8 +213,22 @@ main {
   color: #3a3a3a;
 }
 
+@media screen and (min-width: 576px) {}
+#photos {
+    column-count: 2;
+    column-gap: 0;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+  nav {
+  display: block;
+  position: relative;
+  box-shadow: none;
+  width: fit-content;
+  padding-right: 1rem;
+  }
+
   /* Header */
   nav {
     display: block;
@@ -263,11 +286,20 @@ main {
         align-self: flex-end;
  }
 
+/* Gallery*/
+#photos {
+    column-count: 3;
+}
+
   /* Large devices (laptop and desktops, 992px and up) */
   @media screen and (min-width: 992px) {
     #menu a:hover {
       border-bottom: 1px solid #3a3a3a;
     }
+
+    /* Gallery*/
+#photos {
+    column-count: 4;
   }
 
   /* Extra large devices (large desktops, 1200px and up) */
