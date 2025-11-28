@@ -148,7 +148,7 @@ main {
 
 #circle-cover-bg {
   background: url('../images/reasons-image.webp') no-repeat top center / cover;
-  height: 90vw;
+  height: 90vh;
   width: 90vw;
   margin-bottom: 20px;
   /* Makes the square image into a circle */
@@ -161,12 +161,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-#benefits-physical {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 }
 
 #times {
@@ -192,6 +186,7 @@ main {
   color: #fafafa;
 }
 
+/*Gallery page */
 #photos img {
   width: 100%;
   line-height: 1em;
@@ -201,6 +196,7 @@ main {
   line-height: 0;
 }
 
+/* Form */
 #signup {
   background-image: url("../images/signup-image.webp");
     background-size: cover;
@@ -244,31 +240,6 @@ main {
     color: #fafafa;
 }
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-  #signup {
-    background-position: center;
-    position: relative;
-}
-}
-
-#signup-form {
-    max-width: 400px;
-    position: absolute;
-    left: 10%;
-    top: 150px;
-}
-
-.text-input:hover {
-    border-color: #f16c6b;
-}
-
-.join-button:hover {
-    background-color: #fafafa;
-    color: #454b1b;
-}
-
 /* Footer */
 #social-networks {
   text-align: center;
@@ -283,10 +254,12 @@ main {
   color: #3a3a3a;
 }
 
-@media screen and (min-width: 576px) {}
-#photos {
+/* Media query: tablets and larger (576px and up) */
+@media screen and (min-width: 576px) {
+  #photos {
     column-count: 2;
     column-gap: 0;
+  }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -299,6 +272,8 @@ main {
   padding-right: 1rem;
   }
 
+ 
+
   /* Header */
   nav {
     display: block;
@@ -307,8 +282,7 @@ main {
     width: fit-content;
     padding-right: 1rem;
   }
-
-  #menu {
+#menu {
     display: flex;
   }
 
@@ -350,7 +324,6 @@ main {
         width: 75%;
     }
 
- #benefits-mental > div 
  #benefits-mental > div {
         text-align: end;
         align-self: flex-end;
@@ -359,6 +332,28 @@ main {
 /* Gallery*/
 #photos {
     column-count: 3;
+}
+  /* Form */
+ #signup {
+    background-position: center;
+    position: relative;
+}
+}
+
+#signup-form {
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    top: 150px;
+}
+
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
 }
 
   /* Large devices (laptop and desktops, 992px and up) */
@@ -401,5 +396,4 @@ main {
 #benefits-physical > div {
   align-self: flex-end;
 }
- 
-  }
+
